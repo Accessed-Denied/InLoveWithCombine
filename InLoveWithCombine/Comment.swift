@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+//Model
+struct Comment:Decodable{
+    let name: String
+    let body: String
+}
