@@ -16,6 +16,10 @@
 		2223D59F242D253B00158FEB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223D59E242D253B00158FEB /* Home.swift */; };
 		2223D5A1242D26F900158FEB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223D5A0242D26F900158FEB /* Comment.swift */; };
 		2223D5A3242D273A00158FEB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223D5A2242D273A00158FEB /* APIManager.swift */; };
+		2223D5A5242DB93900158FEB /* HomeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223D5A4242DB93900158FEB /* HomeViewModelDelegate.swift */; };
+		2223D5A6242DB93900158FEB /* HomeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223D5A4242DB93900158FEB /* HomeViewModelDelegate.swift */; };
+		2223D5A8242DE5B300158FEB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223D5A7242DE5B300158FEB /* HomeViewModel.swift */; };
+		2223D5A9242DE5B300158FEB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223D5A7242DE5B300158FEB /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,8 @@
 		2223D59E242D253B00158FEB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		2223D5A0242D26F900158FEB /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2223D5A2242D273A00158FEB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2223D5A4242DB93900158FEB /* HomeViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelDelegate.swift; sourceTree = "<group>"; };
+		2223D5A7242DE5B300158FEB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 				2223D58A242D248300158FEB /* Info.plist */,
 				2223D5A0242D26F900158FEB /* Comment.swift */,
 				2223D5A2242D273A00158FEB /* APIManager.swift */,
+				2223D5A4242DB93900158FEB /* HomeViewModelDelegate.swift */,
+				2223D5A7242DE5B300158FEB /* HomeViewModel.swift */,
 			);
 			path = InLoveWithCombine;
 			sourceTree = "<group>";
@@ -206,7 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2223D5A5242DB93900158FEB /* HomeViewModelDelegate.swift in Sources */,
 				2223D57D242D247E00158FEB /* AppDelegate.swift in Sources */,
+				2223D5A8242DE5B300158FEB /* HomeViewModel.swift in Sources */,
 				2223D59F242D253B00158FEB /* Home.swift in Sources */,
 				2223D5A3242D273A00158FEB /* APIManager.swift in Sources */,
 				2223D57F242D247E00158FEB /* SceneDelegate.swift in Sources */,
@@ -218,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2223D5A6242DB93900158FEB /* HomeViewModelDelegate.swift in Sources */,
+				2223D5A9242DE5B300158FEB /* HomeViewModel.swift in Sources */,
 				2223D594242D248300158FEB /* InLoveWithCombineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

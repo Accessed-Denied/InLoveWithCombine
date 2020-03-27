@@ -12,25 +12,23 @@ import Combine
 class Home: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    private var commentSubscriber: AnyCancellable?
+    private var homeViewModel = HomeViewModel()
+    
+    //Reloading the comments data
     private var comments = [Comment](){
         didSet{
-            tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchComments()
+        homeViewModel.delegate = self
+        homeViewModel.fetchComments()
         // Do any additional setup after loading the view.
     }
-    
-    private func fetchComments(){
-        commentSubscriber = APIMaanager().commentPublisher.sink(receiveCompletion: { _ in
-        }, receiveValue: {[weak self] (allComments)  in
-            self?.comments = allComments
-        })
-    }
-
 }
 
 extension Home: UITableViewDelegate,UITableViewDataSource{
@@ -47,3 +45,16 @@ extension Home: UITableViewDelegate,UITableViewDataSource{
         return cell
     }
 }
+
+extension Home: HomeViewModelDelegate{
+    func didReceiveCommentsResponse(response: [Comment]?, error: String?) {
+        if response != nil{
+            comments = response!
+        }
+        else{
+           print(error!)
+        }
+    }
+    
+}
+

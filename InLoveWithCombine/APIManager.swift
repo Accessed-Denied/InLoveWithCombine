@@ -19,5 +19,6 @@ class APIMaanager{
             .decode(type: [Comment].self, decoder: JSONDecoder())
             .receive(on: RunLoop.main)
             .eraseToAnyPublisher()
+        
     }
 }
